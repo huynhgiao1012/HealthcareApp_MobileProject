@@ -1,0 +1,69 @@
+{
+  "project_info": {
+    "project_number": "871539501633",
+    "firebase_url": "https://healthcare-app-2282a-default-rtdb.asia-southeast1.firebasedatabase.app",
+    "project_id": "healthcare-app-2282a",
+    "storage_bucket": "healthcare-app-2282a.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:871539501633:android:e880cea7d89679f979f4c0",
+        "android_client_info": {
+          "package_name": "com.example.healthcareapp"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "871539501633-2lot2cjp317tprgr7ecf0qrulfp78veb.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyA_Ojdf8fyB9JVey5jiZkyUSK4SbRfGkPQ"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "871539501633-2lot2cjp317tprgr7ecf0qrulfp78veb.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:871539501633:android:978610e0db555e5e79f4c0",
+        "android_client_info": {
+          "package_name": "com.example.healthcareappdoctor"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "871539501633-2lot2cjp317tprgr7ecf0qrulfp78veb.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyA_Ojdf8fyB9JVey5jiZkyUSK4SbRfGkPQ"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "871539501633-2lot2cjp317tprgr7ecf0qrulfp78veb.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

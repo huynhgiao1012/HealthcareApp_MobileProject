@@ -1,0 +1,176 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".HomeFragment">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/banner_card"
+            android:backgroundTint="@color/md_theme_light_primary"
+            android:paddingTop="@dimen/spacing_medium"
+            android:paddingBottom="@dimen/spacing_xxl">
+
+            <TextView
+                android:id="@+id/headline"
+                style="@style/TextAppearance.Material3.HeadlineSmall"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/spacing_xl"
+                android:text="@string/app_title"
+                android:textAlignment="center"
+                android:textColor="@color/md_theme_light_onSecondary" />
+
+            <ImageView
+                android:id="@+id/pfp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/headline"
+                android:layout_centerHorizontal="true"
+                android:layout_marginBottom="@dimen/spacing_medium"
+                android:src="@mipmap/ic_launcher_round" />
+
+            <TextView
+                android:id="@+id/patientName"
+                style="@style/TextAppearance.Material3.HeadlineSmall"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/pfp"
+                android:text="Patient Name"
+                android:layout_marginBottom="@dimen/spacing_medium"
+                android:textAlignment="center"
+                android:textColor="@color/md_theme_light_onSecondary" />
+
+            <com.google.android.material.chip.Chip
+                android:id="@+id/roleTag"
+                style="@style/Widget.Material3.Chip.Suggestion"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/patientName"
+                android:layout_centerHorizontal="true"
+                android:backgroundTint="@color/amp_transparent"
+                android:text="Patient"
+                android:textColor="@color/md_theme_light_onSecondary"
+                app:chipStrokeColor="@color/md_theme_light_onSecondary" />
+
+        </RelativeLayout>
+
+        <com.google.android.material.card.MaterialCardView
+            style="@style/Widget.Material3.CardView.Elevated"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginStart="@dimen/spacing_xxl"
+            android:layout_marginTop="-32dp"
+            android:layout_marginEnd="@dimen/spacing_xxl"
+            android:layout_marginBottom="@dimen/spacing_xl"
+            app:cardElevation="16dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:divider="@drawable/vertical_divider"
+                android:dividerPadding="@dimen/spacing_small"
+                android:orientation="horizontal"
+                android:showDividers="middle">
+
+                <com.google.android.material.card.MaterialCardView
+                    android:id="@+id/toUserInfoCard"
+                    style="@style/Widget.Material3.CardView.Filled"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:clickable="true"
+                    android:textColor="@color/md_theme_light_onSurfaceVariant"
+                    app:backgroundTint="@color/md_theme_light_surface"
+                    app:cardCornerRadius="0dp">
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:padding="@dimen/spacing_medium">
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_centerVertical="true"
+                            android:text="User Info"
+                            android:textAlignment="center" />
+
+                    </RelativeLayout>
+
+                </com.google.android.material.card.MaterialCardView>
+
+                <com.google.android.material.card.MaterialCardView
+                    android:id="@+id/toAddSymptomsCard"
+                    style="@style/Widget.Material3.CardView.Filled"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:clickable="true"
+                    app:backgroundTint="@color/md_theme_light_surfaceVariant"
+                    app:cardCornerRadius="0dp">
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:padding="@dimen/spacing_medium">
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="Add Symptoms"
+                            android:textAlignment="center" />
+
+                    </RelativeLayout>
+
+                </com.google.android.material.card.MaterialCardView>
+
+                <com.google.android.material.card.MaterialCardView
+                    android:id="@+id/toCallDoctorCard"
+                    style="@style/Widget.Material3.CardView.Filled"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:background="@drawable/home_button_right"
+                    android:clickable="true"
+                    app:backgroundTint="@color/md_theme_light_surfaceVariant"
+                    app:cardCornerRadius="0dp">
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:padding="@dimen/spacing_medium">
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_centerVertical="true"
+                            android:text="Call Doctor" />
+
+                    </RelativeLayout>
+
+                </com.google.android.material.card.MaterialCardView>
+
+            </LinearLayout>
+
+        </com.google.android.material.card.MaterialCardView>
+
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/topNewsRV"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+    </LinearLayout>
+
+
+</FrameLayout>

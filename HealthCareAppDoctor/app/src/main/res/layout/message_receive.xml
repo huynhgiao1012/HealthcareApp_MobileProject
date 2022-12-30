@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="300dp"
+    android:layout_height="wrap_content"
+    android:padding="@dimen/spacing_medium">
+
+    <ImageView
+        android:id="@+id/patientPfp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@mipmap/ic_launcher_round" />
+
+    <com.google.android.material.card.MaterialCardView
+        style="@style/Widget.Material3.CardView.Filled"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_marginStart="@dimen/spacing_medium"
+        android:layout_toEndOf="@id/patientPfp"
+        android:backgroundTint="@color/teal_700">
+
+        <TextView
+            android:id="@+id/message"
+            style="@style/TextAppearance.Material3.BodyLarge"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_margin="@dimen/spacing_medium"
+            android:text="Message from other person"
+            android:textColor="@color/white" />
+
+    </com.google.android.material.card.MaterialCardView>
+
+</RelativeLayout>

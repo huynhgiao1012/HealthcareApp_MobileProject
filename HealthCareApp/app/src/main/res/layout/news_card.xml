@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.google.android.material.card.MaterialCardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    style="@style/Widget.Material3.CardView.Elevated"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginStart="@dimen/spacing_xl"
+    android:layout_marginTop="@dimen/spacing_xl"
+    android:layout_marginEnd="@dimen/spacing_xl"
+    android:backgroundTint="@color/md_theme_light_secondaryContainer">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <ImageView
+            android:id="@+id/newsHeaderImg"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:adjustViewBounds="true"
+            android:src="@mipmap/ic_placeholder" />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/newsHeaderImg"
+            android:paddingStart="@dimen/spacing_medium"
+            android:paddingTop="@dimen/spacing_xl"
+            android:paddingEnd="@dimen/spacing_medium"
+            android:paddingBottom="@dimen/spacing_medium">
+
+            <TextView
+                android:id="@+id/newsTitle"
+                style="@style/TextAppearance.Material3.HeadlineSmall"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/spacing_small"
+                android:text="Title"
+                android:textColor="@color/md_theme_light_onSecondaryContainer" />
+
+            <TextView
+                android:id="@+id/newsContent"
+                style="@style/TextAppearance.Material3.BodyMedium"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/newsTitle"
+                android:layout_marginBottom="@dimen/spacing_medium"
+                android:ellipsize="end"
+                android:maxLines="2"
+                android:text="@string/lorem_ipsum_text"
+                android:textColor="@color/md_theme_light_onSecondaryContainer" />
+
+            <com.google.android.material.divider.MaterialDivider
+                android:id="@+id/divider"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/newsContent"
+                android:layout_marginBottom="@dimen/spacing_medium"
+                app:dividerColor="@color/md_theme_light_onSecondaryContainer" />
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/shareArticleButton"
+                style="@style/Widget.Material3.Button.OutlinedButton"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/divider"
+                android:layout_alignParentEnd="true"
+                android:text="@string/share_text"
+                app:icon="@drawable/ic_share_24dp" />
+
+        </RelativeLayout>
+
+    </RelativeLayout>
+
+</com.google.android.material.card.MaterialCardView>

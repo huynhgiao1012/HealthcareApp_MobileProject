@@ -1,0 +1,52 @@
+<resources>
+    <string name="app_name">HealthCareApp</string>
+    <string name="username_label">Username</string>
+    <string name="password_label">Password</string>
+    <string name="remember_me_checkbox">Remember me</string>
+    <string name="sign_in_button">Sign In</string>
+    <string name="sign_in_text">Sign In</string>
+    <string name="title_activity_sign_in">SignInActivity</string>
+    <string name="sign_up_text">Sign Up</string>
+    <string name="id_number_label">ID Number</string>
+    <string name="retype_password_label">Retype Password</string>
+    <string name="name_label">Name</string>
+    <string name="already_had_an_account_text">Already had an account?</string>
+    <string name="app_title">Health Care App</string>
+    <string name="home_item">Home</string>
+    <string name="news_item">News</string>
+    <string name="chat_item">Chat</string>
+    <string name="user_item">User</string>
+    <string name="lorem_ipsum_text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent vel arcu et nunc pellentesque porttitor. Donec ut scelerisque est. Proin facilisis congue justo semper interdum. Vivamus varius felis quis tristique elementum. Aliquam erat volutpat. Integer molestie lacus sed turpis imperdiet mattis. Maecenas id viverra sem. Vivamus pretium leo vitae dui rutrum, in accumsan magna ullamcorper. Phasellus sodales nibh elit, a vestibulum massa ultrices vitae. In et rhoncus nisi. Pellentesque nec finibus mauris.
+
+Vivamus posuere nulla vel ex dapibus, nec tincidunt turpis scelerisque. Suspendisse potenti. Sed convallis malesuada nisl, ut sodales est vulputate quis. Mauris purus purus, interdum suscipit magna vitae, aliquam gravida mauris. Nam hendrerit nunc sapien, quis convallis nunc semper sit amet. Donec magna augue, bibendum nec est nec, mollis placerat turpis. Donec in felis luctus, ultricies lectus sed, pharetra libero. Sed bibendum quis erat at venenatis. Proin egestas consectetur ante. Nam finibus sagittis nulla sit amet convallis. Cras tempus scelerisque augue ac auctor. In tristique sem id tincidunt volutpat. Aliquam vehicula posuere nisl id gravida. Cras enim arcu, aliquam vel consectetur sit amet, sollicitudin et nulla. Mauris nec vestibulum felis. Nam egestas dignissim nunc, vel dignissim turpis pellentesque in.</string>
+    <string name="share_text">Share</string>
+    <string name="info_text">Info</string>
+
+    <!--TODO: Remove the string arrays in the future-->
+    <string-array name="news_titles">
+        <item>Title 1</item>
+        <item>Title 2</item>
+        <item>Title 3</item>
+        <item>Title 4</item>
+        <item>Title 5</item>
+        <item>Title 6</item>
+        <item>Title wtf</item>
+        <item>Title lmao</item>
+        <item>Title test</item>
+    </string-array>
+
+    <string-array name="doctor_names">
+        <item>Ng Van A</item>
+        <item>Tran Van B</item>
+        <item>Ng Van C</item>
+        <item>Tran Van D</item>
+        <item>Ng Van E</item>
+        <item>Tran Van F</item>
+        <item>Ng Van G</item>
+        <item>Tran Van A</item>
+    </string-array>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="new_password_label">New Password</string>
+
+</resources>
